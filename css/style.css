@@ -22,9 +22,22 @@ body {
   margin: 0;
 }
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 1200px;
+  outline: 2px solid tomato;
+}
+
 /* =====HEADER===== */
 
 .logo {
+  display: inline-block;
+  padding-top: 24px;
+  padding-bottom: 25px;
+
   color: var(--logo-black-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -37,6 +50,10 @@ body {
 }
 
 .site-nav-link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   line-height: 1.14;
   text-decoration: none;
@@ -52,6 +69,10 @@ body {
 }
 
 .auth-nav-link {
+  display: inline-block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   line-height: 1.14;
   text-decoration: none;
@@ -74,8 +95,8 @@ body {
 }
 
 .hero-title {
-  margin-top: 0px;
-  margin-bottom: 40px;
+  margin-top: 200px;
+  margin-bottom: 30px;
 
   color: var(--primary-write-color);
   font-weight: 900;
@@ -85,6 +106,9 @@ body {
 }
 
 .section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -93,22 +117,33 @@ body {
 }
 
 .section-team {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
   color: var(--primary-text-color);
   font-size: 16px;
 }
 
 .section-team-text {
+  margin-top: 0;
+  margin-bottom: 30px;
+
   font-size: 16px;
   line-height: 1.9;
 }
 
 .section-subtitle {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--primary-text-color);
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .section-text {
+  margin: 0 0;
+
   color: var(--title-text-color);
   line-height: 1.7;
 }
@@ -124,14 +159,14 @@ body {
   border-radius: 4px;
   border-color: transparent;
   padding: 10px 32px;
-  
+  margin-bottom: 200px;
 
   color: var(--primary-write-color);
   background-color: var(--accent-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-
+}
 
 .button-nav .btn {
   color: var(--primary-text-color);
@@ -176,6 +211,10 @@ body {
 }
 
 .footer-logo {
+  display: inline-block;
+  margin-top: 60px;
+  margin-bottom: 20px;
+
   color: var(--primary-write-color);
   font-family: Raleway, sans-serif;
   font-weight: 700;
@@ -184,9 +223,18 @@ body {
 }
 
 .footer-contacts {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--primary-write-color);
   font-style: normal;
   line-height: 1.7;
+}
+
+.footer-nav {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 60px;
 }
 
 .footer-nav .button {
