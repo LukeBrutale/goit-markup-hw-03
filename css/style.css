@@ -45,10 +45,6 @@ img {
   display: block;
 }
 
-.section-margin {
-  margin-bottom: 94px;
-}
-
 /* =====HEADER===== */
 
 .header-nav {
@@ -135,11 +131,33 @@ img {
 
 /* Hero */
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .hero {
   background-color: var(--secondary-bg-color);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+}
+
+.hero-text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 650px;
+  height: 200px;
 }
 
 .hero-title {
@@ -152,10 +170,19 @@ img {
   text-transform: uppercase;
 }
 
+.section-progress {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-specifics {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .features {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
 }
 
 .features .item {
@@ -183,6 +210,11 @@ img {
   line-height: 1.7;
 }
 
+.section-function {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .section-title {
   margin-top: 0;
   margin-bottom: 50px;
@@ -204,12 +236,12 @@ img {
 
 .instruction {
   padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--subsecondary-bg-color);
 }
 
 .section-instruction {
   display: flex;
-  padding-bottom: 94px;
 }
 
 .section-instruction .item {
@@ -315,17 +347,21 @@ img {
 }
 
 .content-link .content-title {
-  margin: 20px 24px 4px;
-
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
 }
 
-.content-text {
-  margin: 0 24px 20px;
+.content-box {
+  padding: 20px 24px;
+}
 
+.content-title {
+  margin-bottom: 4px;
+}
+
+.content-text {
   color: var(--title-text-color);
   font-size: 16px;
   line-height: 1.9;
