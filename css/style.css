@@ -187,7 +187,6 @@ input[type="radio"].visually-hidden {
 
 .features .item {
   max-width: 270px;
-  height: 101px;
 }
 
 .features .item.item:not(:last-child) {
@@ -206,6 +205,7 @@ input[type="radio"].visually-hidden {
 .section-text {
   margin: 0 0;
 
+  font-weight: 400;
   color: var(--title-text-color);
   line-height: 1.7;
 }
@@ -245,6 +245,8 @@ input[type="radio"].visually-hidden {
 }
 
 .section-instruction .item {
+  width: 270px;
+
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
@@ -255,12 +257,14 @@ input[type="radio"].visually-hidden {
 }
 
 .masters-contact {
-  margin-top: 30px;
-  margin-bottom: 30px;
   text-align: center;
+
+  padding: 30px;
+  width: 270px;
 }
 
 .section-team {
+  font-weight: 500;
   margin-bottom: 10px;
 
   color: var(--primary-text-color);
@@ -268,6 +272,7 @@ input[type="radio"].visually-hidden {
 }
 
 .section-team-text {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.9;
 }
@@ -291,6 +296,8 @@ input[type="radio"].visually-hidden {
 
   color: var(--primary-text-color);
   background-color: var(--primary-write-color);
+
+  font-weight: 500;
 }
 
 .hero-btn {
@@ -355,6 +362,7 @@ input[type="radio"].visually-hidden {
 
 .content-box {
   padding: 20px 24px;
+  width: 370px;
 }
 
 .content-title {
@@ -394,6 +402,7 @@ input[type="radio"].visually-hidden {
 
   color: var(--primary-write-color);
   font-style: normal;
+  font-weight: 400;
   line-height: 1.7;
 }
 
@@ -412,6 +421,10 @@ input[type="radio"].visually-hidden {
 .footer-nav .button:hover,
 .footer-nav .button:focus {
   color: var(--accent-color);
+}
+
+.footer-nav .item {
+  font-weight: 400;
 }
 
 .footer-nav .item:not(:last-child) {
