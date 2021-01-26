@@ -211,7 +211,6 @@ input[type="radio"].visually-hidden {
 }
 
 .section-function {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -228,6 +227,10 @@ input[type="radio"].visually-hidden {
 
 .section-work {
   display: flex;
+}
+
+.section-work .item {
+  width: 370px;
 }
 
 .section-work .item:not(:last-child) {
